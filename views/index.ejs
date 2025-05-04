@@ -120,14 +120,16 @@
               alt="Book Cover"
               style="height: 500px"
             />
-            <div class="card-body">
-              <h5 class="card-title"><%= e.booktitle %></h5>
+            <div class="card-body" style="height: 400px">
+              <h5 class="card-title" style="height: 20%"><%= e.booktitle %></h5>
               <p class="card-text text-muted mb-1"><%= e.bookauthor %></p>
               <span class="genre-tag mb-2 d-inline-block"
                 ><%= e.bookgenre %></span
               >
-              <p class="price-tag"><%= e.bookprice %></p>
-              <p class="card-text"><%= e.bookdescription %></p>
+              <p class="price-tag">$ <%= e.bookprice %></p>
+              <p class="card-text" style="height: 25%">
+                <%= e.bookdescription %>
+              </p>
               <div class="d-flex flex-wrap gap-2">
                 <a
                   href="/EditData?id=<%=e.id%>"
